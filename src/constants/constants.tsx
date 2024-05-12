@@ -78,7 +78,7 @@ export const constants = {
     latestExperience: {
       years: "2021– 2024 – React Frontend Developer at Monkeytech:",
       introduction:
-        "As a programmer in Monkeytech I work with a lot of customers on various projects.\nEach project demands team and cross team collaboration while learning and adapting to new technologies and systems.\nThe job requires me to meet customers, schedule and sometimes work on several projects simultaneously.\nWhile working I:",
+        "The job required me to meet customers, schedule and sometimes work on several projects simultaneously. Each project demands team and cross team collaboration while learning and adapting to new technologies and systems. The responsibilities I had are:",
       tech: "Built responsive websites for various customers using: ",
       responsiveness:
         "Implemented responsive design mobile experience in client projects",
