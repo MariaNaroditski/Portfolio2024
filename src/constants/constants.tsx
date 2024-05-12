@@ -76,7 +76,7 @@ export const constants = {
   experience: {
     experienceTitle: "Experience",
     latestExperience: {
-      years: "2021– today – React Frontend Developer at Monkeytech:",
+      years: "2021– 2024 – React Frontend Developer at Monkeytech:",
       introduction:
         "As a programmer in Monkeytech I work with a lot of customers on various projects.\nEach project demands team and cross team collaboration while learning and adapting to new technologies and systems.\nThe job requires me to meet customers, schedule and sometimes work on several projects simultaneously.\nWhile working I:",
       tech: "Built responsive websites for various customers using: ",
