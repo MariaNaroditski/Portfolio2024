@@ -3,7 +3,7 @@ import { theme } from "../../theme";
 import { deviceMax } from "../../constants/constants";
 
 type ContactContainerProps = {
-  isContactPage?: boolean;
+  $isContactPage?: boolean;
 };
 
 export const ContactContainer = styled.div<ContactContainerProps>`
@@ -11,17 +11,17 @@ export const ContactContainer = styled.div<ContactContainerProps>`
   flex-direction: column;
   justify-content: space-evenly;
   width: 100%;
-  height: ${({ isContactPage }) => (isContactPage ? "430px" : "fit-content")};
-  border: ${({ isContactPage }) =>
-    isContactPage ? "none" : `4px double ${theme.first}`};
+  height: ${({ $isContactPage }) => ($isContactPage ? "430px" : "fit-content")};
+  border: ${({ $isContactPage }) =>
+    $isContactPage ? "none" : `4px double ${theme.first}`};
   padding: 1rem;
-  max-width: ${({ isContactPage }) => (isContactPage ? "600px" : "100%")};
+  max-width: ${({ $isContactPage }) => ($isContactPage ? "600px" : "100%")};
 
   @media ${deviceMax.laptop} {
     border-left: none;
     border-right: none;
-    width: ${({ isContactPage }) => (isContactPage ? "100%" : "50%")};
-    height: ${({ isContactPage }) => (isContactPage ? "230px" : "fit-content")};
+    width: ${({ $isContactPage }) => ($isContactPage ? "100%" : "50%")};
+    height: ${({ $isContactPage }) => ($isContactPage ? "230px" : "fit-content")};
   }
 
   @media ${deviceMax.mobile} {

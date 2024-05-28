@@ -6,21 +6,26 @@ export const ContactMeContainer = styled.div`
   display: flex;
   flex-direction: column;
   width: 100%;
+  max-width: 1220px;
   height: 100%;
   align-items: center;
   justify-content: center;
-  overflow-y: auto;
-  overflow-x: hidden;
-  scrollbar-color: ${theme.first} white;
-  scrollbar-width: thin;
+  margin: 80px 0 0;
+  padding: 0rem 2rem 0;
 
   @media ${deviceMax.laptop} {
     justify-content: flex-start;
-    padding: 8rem 0;
+    margin: 20px 0 40px;
+    padding: 4rem 0 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+    scrollbar-color: ${theme.first} white;
+    scrollbar-width: thin;
   }
 
-  @media ${deviceMax.mobile} {
-    padding: 3rem 0 0;
+  @media ${deviceMax.tablet} {
+    margin: 20px 0 40px;
+    padding: 1rem 0 0;
   }
 `;
 
@@ -30,7 +35,7 @@ export const ContactMeInnerContainer = styled.div`
   justify-content: space-evenly;
   align-items: center;
   max-width: 1440px;
-  margin: 5rem 0 0;
+  margin-top: 2rem;
 
   :nth-child(2) {
     align-self: flex-start;
@@ -40,7 +45,7 @@ export const ContactMeInnerContainer = styled.div`
     flex-direction: column-reverse;
     height: fit-content;
     max-width: 95%;
-    margin: 2rem 0 0;
+    margin-top: 1rem;
 
     :nth-child(2) {
       align-self: center;

@@ -17,7 +17,7 @@ export const Title = styled.h1<TypographyProps>`
   margin: ${({ $margin }) => $margin || 0};
   padding: ${({ $padding }) => $padding || 0};
   color: ${({ $color }) => $color || "black"};
-  font-size: ${({ $fontSize }) => $fontSize || "2rem"};
+  font-size: ${({ $fontSize }) => $fontSize || "3.5rem"};
   font-weight: ${({ $fontWeight }) => $fontWeight || "100"};
   text-align: ${({ $textAlign }) => $textAlign || "left"};
   font-style: ${({ $fontStyle }) => $fontStyle || "normal"};
@@ -59,7 +59,7 @@ export const Text = styled.p<TypographyProps>`
   margin: ${({ $margin }) => $margin || 0};
   padding: ${({ $padding }) => $padding || 0};
   color: ${({ $color }) => $color || "black"};
-  font-size: ${({ $fontSize }) => $fontSize || "1rem"};
+  font-size: ${({ $fontSize }) => $fontSize || "1.5rem"};
   font-weight: ${({ $fontWeight }) => $fontWeight || "100"};
   text-align: ${({ $textAlign }) => $textAlign || "left"};
   font-style: ${({ $fontStyle }) => $fontStyle || "normal"};
@@ -72,7 +72,7 @@ export const Text = styled.p<TypographyProps>`
   }
 
   @media (${deviceMax.mobile}) {
-    font-size: ${({ $fontSize }) => $fontSize || "1.2rem"};
+    font-size: ${({ $fontSize }) => $fontSize || "1rem"};
     line-height: 25px;
   }
 `;

@@ -1,5 +1,6 @@
 html {
   height: 100%;
+  overflow: hidden;
 }
 
 body {
@@ -25,7 +26,6 @@ body {
   @media screen and (max-width: 993px)  {
     justify-content: flex-start;
   }
-
 }
 
 

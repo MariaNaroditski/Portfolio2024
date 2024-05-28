@@ -21,7 +21,8 @@ const ContactMePage = () => {
         $color={theme.first}
         $textAlign="center"
         $fontStyle="italic"
-        $fontSize={isSmallDevice ? "2rem" : "3.5rem"}
+        $fontSize={isSmallDevice ? "2rem" : "3rem"}
+        $maxWidth="1220px"
       >
         {quote}
       </Title>
@@ -29,8 +30,8 @@ const ContactMePage = () => {
         <Image
           src={MyDrawing}
           alt={myDrawing}
-          $maxWidth={isSmallDevice ? "350px" : "600px"}
-          $maxHeight={isSmallDevice ? "350px" : "600px"}
+          $maxWidth={isSmallDevice ? "350px" : "500px"}
+          $maxHeight={isSmallDevice ? "350px" : "500px"}
           $borderRadius="50%"
         />
         <Contact isContactPage />

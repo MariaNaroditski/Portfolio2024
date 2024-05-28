@@ -13,17 +13,15 @@ export const HomeContainer = styled.div`
   width: 100%;
   max-width: 1200px;
   height: 100%;
-  max-height: 700px;
+  max-height: 600px;
   box-shadow: 1px 15px 53px 28px rgba(234, 210, 210, 75%);
   -webkit-box-shadow: 2px 15px 53px 28px rgba(234, 210, 210, 75%);
   -moz-box-shadow: 2px 15px 53px 28px rgba(234, 210, 210, 75%);
   border-radius: 50% 10% 50% 10% / 10% 50% 10% 50%;
-  margin: 2rem 0 0;
 
-  @media ${deviceMax.tablet} {
+  @media (${deviceMax.tablet}) {
     width: 95%;
-    padding: 2rem 0 0;
-    margin: 1rem 0 0;
+    padding: 1rem 0 0;
   }
 `;
 
@@ -43,6 +41,8 @@ export const InnerHomeContainer = styled.div`
     width: 100%;
     justify-content: flex-start;
   }
+
+
 `;
 export const DottedHr = styled.hr`
   border-top: 6px dotted black;
@@ -51,7 +51,7 @@ export const DottedHr = styled.hr`
   margin: 1.2rem 0 2rem;
 
   @media (${deviceMax.tablet}) {
-    margin: 1.5rem 0 2rem;
+    margin: 0.5rem 0;
     width: 80%;
   }
 
@@ -80,5 +80,9 @@ export const GoToResume = styled(NavLink)`
     font-size: 1rem;
     max-width: 110px;
     margin: 2rem 0;
+  }
+
+  @media (${deviceMax.mobile}) {
+    margin: 1rem 0;
   }
 `;

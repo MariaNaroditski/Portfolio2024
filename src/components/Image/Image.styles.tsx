@@ -8,7 +8,7 @@ type StyledImageProps = {
 };
 export const StyleImage = styled.img<StyledImageProps>`
   max-width: ${({ $maxWidth }) => $maxWidth || "100%"};
-  max-height: ${({ $maxHeight }) => $maxHeight || "auto"};
+  max-height: ${({ $maxHeight }) => $maxHeight || "fit-content"};
   width: 100%;
   border: ${({ $border }) => $border || "none"};
   border-radius: ${({ $borderRadius }) => $borderRadius || "unset"};

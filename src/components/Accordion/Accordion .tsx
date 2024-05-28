@@ -33,13 +33,13 @@ const Accordion = (props: AccordionProps) => {
 
   return isListItems ? (
     <AccordionContainer>
-      <AccordionInnerContainer isListItems={isListItems}>
+      <AccordionInnerContainer $isListItems={isListItems}>
         <Text $textAlign="center" $fontSize="1.5rem" $color={theme.first}>
           {title}
         </Text>
         <ArrowButton
           onClick={() => handleTogglingAccordion((prev) => !prev)}
-          isListItems={isListItems}
+          $isListItems={isListItems}
         >
           {isOpen ? (
             <i className="fa fa-solid fa-chevron-up" />
@@ -64,7 +64,7 @@ const Accordion = (props: AccordionProps) => {
         </ArrowButton>
       </AccordionInnerContainer>
       <Hr />
-      <Children isOpen={isOpen}>{children}</Children>
+      <Children $isOpen={isOpen}>{children}</Children>
     </AccordionContainer>
   );
 };

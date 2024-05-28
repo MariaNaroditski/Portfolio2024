@@ -97,7 +97,7 @@ const Resume = () => {
             handleTogglingAccordion={setIsOpenQualifications}
             isListItems
           >
-            <ListContainer isDividedUl>
+            <ListContainer $isDividedUl $padding="0 0 0 1rem">
               {isOpenQualifications &&
                 qualifications.map((qualification, index) => (
                   <li key={index}>{qualification}</li>
@@ -111,7 +111,7 @@ const Resume = () => {
             isListItems
           >
             {isOpenSkills && (
-              <ListContainer isDividedUl>
+              <ListContainer $isDividedUl $padding="0 0 0 1rem">
                 {skillsArr.map((skill, index) => (
                   <li key={index}>{skill}</li>
                 ))}
@@ -205,7 +205,7 @@ const Resume = () => {
           >
             <Info $margin="0">
               {isOpenLanguage && (
-                <ListContainer>
+                <ListContainer $padding="0 0 0 1rem">
                   {languages.map((language, index) => (
                     <li key={index}>{language}</li>
                   ))}

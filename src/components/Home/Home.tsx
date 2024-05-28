@@ -24,14 +24,14 @@ const Home = () => {
       <Image
         src={ProfileImage}
         alt={myProfileImage}
-        $maxWidth={isSmallDevice ? "220px" : "460px"}
+        $maxWidth={isSmallDevice ? "200px" : "400px"}
+        $maxHeight={isSmallDevice ? "250px" : "450px"}
         $borderRadius="8px"
         $border={`10px double ${theme.first}`}
       />
       <InnerHomeContainer>
         <Title
           $textAlign="center"
-          $fontSize={isSmallDevice ? "2rem" : "4rem"}
           $color={theme.first}
           $fontStyle="italic"
           $lineHeight="60px"
@@ -42,8 +42,7 @@ const Home = () => {
         <Text
           $maxWidth={isSmallDevice ? "70%" : "90%"}
           $textAlign="center"
-          $fontSize={isSmallDevice ? "1rem" : "1.8rem"}
-          $lineHeight="44px"
+          $lineHeight="35px"
         >
           {skillsArr}{" "}
         </Text>

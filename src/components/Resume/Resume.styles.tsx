@@ -10,6 +10,13 @@ export const ResumeContainer = styled.div`
   overflow: scroll;
   scrollbar-color: ${theme.first} white;
   scrollbar-width: thin;
+
+  @media ${deviceMax.laptop} {
+    padding: 0 2rem;
+    width: 95%;
+    margin: 1rem 0 0;
+  }
+
 `;
 
 export const ResumeInnerContainer = styled.div`
@@ -23,6 +30,11 @@ export const ResumeInnerContainer = styled.div`
   width: 100%;
   max-width: 1650px;
   margin: 0 auto;
+
+  @media ${deviceMax.mobile} {
+    width: 90%;
+    padding: 0 1rem;
+  }
 `;
 
 export const LeftContainer = styled.div`
@@ -73,7 +85,7 @@ export const Info = styled.div<InfoProps>`
 type ListContainerProps = {
   $padding?: string;
   $margin?: string;
-  isDividedUl?: boolean;
+  $isDividedUl?: boolean;
 };
 
 export const ListContainer = styled.ul<ListContainerProps>`
@@ -86,8 +98,8 @@ export const ListContainer = styled.ul<ListContainerProps>`
   font-size: 1.2rem;
 
   @media ${deviceMax.laptop} {
-    ${({ isDividedUl }) =>
-      isDividedUl &&
+    ${({ $isDividedUl }) =>
+      $isDividedUl &&
       `
         width: 100%;
         max-width: 700px;
@@ -99,8 +111,8 @@ export const ListContainer = styled.ul<ListContainerProps>`
 
   @media ${deviceMax.mobile} {
     font-size: 1rem;
-    ${({ isDividedUl }) =>
-      isDividedUl &&
+    ${({ $isDividedUl }) =>
+      $isDividedUl &&
       `
         width: 100%;
         -webkit-column-count: 1;
@@ -129,8 +141,9 @@ export const RightContainer = styled.div`
   }
 
   @media ${deviceMax.mobile} {
+    width: 98%;
     margin: 1rem 0 0;
-    padding: 2rem 0 4rem;
+    padding: 2rem 0 4rem 1rem;
   }
 `;
 

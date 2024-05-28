@@ -30,27 +30,23 @@ export const AboutMeContainer = styled.div`
   height: fit-content;
   background: white;
   max-width: 1400px;
+  margin: 80px 0 40px;
   padding: 4rem 2rem;
   white-space: break-spaces;
   border-right: 40px double ${theme.secondary};
   border-left: 40px double ${theme.secondary};
 
-  @media ${deviceMax.desktop} {
-    margin-top: 2rem;
-    padding: 6rem 2rem;
-  }
-
   @media ${deviceMax.laptop} {
     flex-direction: column;
-    margin: 0;
     border-right: 30px double ${theme.secondary};
     border-left: 30px double ${theme.secondary};
+    margin: 20px 0 40px;
   }
+
 
   @media ${deviceMax.mobile} {
     border-right: 20px double ${theme.secondary};
     border-left: 20px double ${theme.secondary};
-    padding: 2rem;
   }
 `;
 

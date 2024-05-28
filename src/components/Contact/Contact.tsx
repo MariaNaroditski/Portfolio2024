@@ -24,20 +24,20 @@ const Contact = (props: ContactProps) => {
   const { isContactPage } = props;
 
   const titleProps = isContactPage
-    ? { $fontSize: isSmallDevice ? "1.8rem" : "3rem" }
+    ? { $fontSize: isSmallDevice ? "1.8rem" : "2.5rem", $margin: "0 0 1rem" }
     : {
         $fontSize: isSmallDevice ? "1.5rem" : "1.8rem",
         $margin: "0 0 1rem",
       };
 
   const textProps = isContactPage
-    ? { $fontSize: isSmallDevice ? "1rem" : "2rem" }
+    ? { $fontSize: isSmallDevice ? "1rem" : "1.5rem" }
     : {
         $fontSize: isSmallDevice ? "1rem" : "1.5rem",
       };
 
   return (
-    <ContactContainer isContactPage={isContactPage}>
+    <ContactContainer $isContactPage={isContactPage}>
       <Title $textAlign="center" $color={theme.first} {...titleProps}>
         {contactTitle}
       </Title>
